@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор стоимости</title>
+  </head>
+  <body>
+    <div class="counter">
+      <div class="counter-block">
+        <label for="persons">Количество человек:</label>
+        <input type="number" class="counter-block-input" min="1" />
+      </div>
+      <div class="counter-block">
+        <label for="days">Количество дней:</label>
+        <input type="number" class="counter-block-input" min="1" />
+      </div>
+      <div class="counter-block">
+        <label for="base">База:</label>
+        <select id="select">
+          <option value="1">Стандарт</option>
+          <option value="1.2">Премиум</option>
+          <option value="1.5">Люкс</option>
+        </select>
+      </div>
+      <div class="counter-block">
+        <p>Итоговая стоимость: <span id="total">0</span> руб.</p>
+      </div>
+    </div>
+
+    <script src="Counter.js"></script>
+  </body>
+</html>
